@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e5e2e2ec;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+button {
+    margin: 20px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.book {
+    border: 1px solid #ddd;
+    margin: 10px;
+    position: relative; /* Ajout de la position relative pour que la position absolute fonctionne à l'intérieur */
+}
+
+.bookInfo {
+    display: flex;
+    align-items: center;
+}
+
+.book img {
+    width: 100px;
+    height: auto;
+}
+
+.bookDetails {
+    margin-left: 10px;
+}
+
+.description {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace; /* Utilisation de la police TypeWriter */
+    font-size: 14px; /* Taille de police plus petite */
+    max-width: 500px; /* Ajustez la largeur souhaitée */
+}
+
+.hidden {
+    display: none;
+}
