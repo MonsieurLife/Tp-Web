@@ -10,90 +10,141 @@
     <header>
         <h1>Bibliothèque</h1>
     </header>
-    <button id="toggleButton">Afficher / Cacher la liste de livres</button>
-    <div id="bookList" class="hidden">
-        <div class="book">
-            <div class = "bookInfo">
-                <img src="Ressource/Livre_1.jpg" alt="Livre 1" class = "BookImage">
-                <div class = "bookDetails">
-                    <p>Le dernier Voeu</p>
-                    <p  class = " description hidden"> Recueil de nouvelle : "Le Sorceleur","La voix de la Raison"
-                        "Un grain de vérité","Le Moindre Mal", "Une Question de Prix", "Au Bout du Monde", "Le Dernier Voeu". 
+    <!-- Onglets -->
+    <div class="tab">
+        <button class="tablinks" onclick="openTab('TheWitcher', this)">The Witcher</button>
+        <button class="tablinks" onclick="openTab('LesSalaudsGentilshommes', this)">Les Salaud Gentilshommes</button>
+        <button class="tablinks" onclick="openTab('La Première Loi',this)">La Première Loi</button>"
+    </div>
+    <div id="TheWitcher" class="tabcontent">
+        <!--<button class="toggleButton">Afficher / Cacher la liste de livres</button>-->
+        <div class="bookList">
+            <!-- Contenu pour l'onglet The Witcher -->
+            <div class="book">
+                <div class="bookInfo">
+                    <img src="Ressource/Livre_1.jpg" alt="Livre 1" class="BookImage">
+                    <div class="bookDetails">
+                        <p>Le dernier Voeu</p>
+                        <p class="description hidden">Recueil de nouvelles : "Le Sorceleur","La voix de la Raison", "Un grain de vérité","Le Moindre Mal", "Une Question de Prix", "Au Bout du Monde", "Le Dernier Voeu". 
                         Le recueil de nouvelles introduit Geralt de Riv, un sorceleur, chasseur de monstres professionnel, et explore ses aventures à travers des contes où la magie,
                         la politique et les monstres se croisent.</p>
-                    <button class = "showDescriptionButton">Afficher la description </button>
+                        <button class="showDescriptionButton">Afficher la description</button>
+                    </div>
+                </div>
+            </div>
+            <div class="book">
+                <div class = "bookInfo">
+                    <img src="Ressource/Livre_2.jpg" alt="Livre 1" class = "BookImage">
+                    <div class = "bookDetails">
+                        <p>L'Épée de la Providence</p>
+                        <p  class = " description hidden"> La deuxième collection de nouvelles suit Geralt dans ses voyages, mettant en lumière ses relations complexes 
+                            avec des personnages tels que Ciri et Yennefer.
+                            Les histoires explorent le destin et la nature des choix. </p>
+                        <button class = "showDescriptionButton">Afficher la description </button>
+                    </div>
+                </div>
+            </div>
+            <div class="book">
+                <div class = "bookInfo">
+                    <img src="Ressource/Livre_3.jpg" alt="Livre 3" class = "BookImage">
+                    <div class = "bookDetails">
+                        <p>Le Sang des Elfes</p>
+                        <p  class = " description hidden"> Le premier roman de la saga suit Ciri, une jeune princesse avec des pouvoirs surnaturels, alors qu'elle devient l'apprentie de Geralt. 
+                            Le récit plonge plus profondément dans les conflits politiques et les complots qui entourent Ciri. </p>
+                        <button class = "showDescriptionButton">Afficher la description </button>
+                    </div>
+                </div>
+            </div>
+            <div class="book">
+                <div class = "bookInfo">
+                    <img src="Ressource/Livre_4.jpg" alt="Livre 4" class = "BookImage">
+                    <div class = "bookDetails">
+                        <p>Le Temps du Mépris</p>
+                        <p  class = " description hidden"> Les tensions politiques s'intensifient alors que la guerre entre les royaumes et les mages éclate. Ciri se retrouve au cœur des événements et est confrontée à des défis 
+                            qui mettront à l'épreuve sa résilience et son pouvoir.</p>
+                        <button class = "showDescriptionButton">Afficher la description </button>
+                    </div>
+                </div>
+            </div>
+            <div class="book">
+                <div class = "bookInfo">
+                    <img src="Ressource/Livre_5.jpg" alt="Livre 5" class = "BookImage">
+                    <div class = "bookDetails">
+                        <p>Le Baptème du Feu</p>
+                        <p  class = " description hidden"> Geralt et ses alliés poursuivent leur quête pour protéger Ciri des forces qui la traquent. Le récit explore les 
+                            conséquences de la guerre et les sacrifices nécessaires pour sauver ceux que l'on aime. </p>
+                        <button class = "showDescriptionButton">Afficher la description </button>
+                    </div>
+                </div>
+            </div>
+            <div class="book">
+                <div class = "bookInfo">
+                    <img src="Ressource/Livre_6.jpg" alt="Livre 6" class = "BookImage">
+                    <div class = "bookDetails">
+                        <p>La Tour de l'Hirondelle</p>
+                        <p  class = " description hidden"> Ciri continue son voyage, tandis que des intrigues politiques et des conspirations obscurcissent le monde. 
+                            L'histoire révèle des éléments clés du passé de Ciri et sa connexion avec Geralt.</p>
+                        <button class = "showDescriptionButton">Afficher la description </button>
+                    </div>
+                </div>
+            </div>
+            <div class="book">
+                <div class = "bookInfo">
+                    <img src="Ressource/Livre_7.jpg" alt="Livre 7" class = "BookImage">
+                    <div class = "bookDetails">
+                        <p>La Dame du Lac</p>
+                        <p  class = " description hidden"> Le dernier livre de la saga rassemble les fils narratifs, révélant les destins de Geralt, Ciri et Yennefer. 
+                            L'intrigue explore les thèmes de la destinée, 
+                            de l'amour et des choix difficiles dans un monde hanté par la magie et la guerre</p>
+                        <button class = "showDescriptionButton">Afficher la description </button>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="book">
-            <div class = "bookInfo">
-                <img src="Ressource/Livre_2.jpg" alt="Livre 1" class = "BookImage">
-                <div class = "bookDetails">
-                    <p>L'Épée de la Providence</p>
-                    <p  class = " description hidden"> La deuxième collection de nouvelles suit Geralt dans ses voyages, mettant en lumière ses relations complexes 
-                        avec des personnages tels que Ciri et Yennefer.
-                        Les histoires explorent le destin et la nature des choix. </p>
-                    <button class = "showDescriptionButton">Afficher la description </button>
+    </div>
+    
+    <div id="LesSalaudsGentilshommes" class="tabcontent">
+         <button class="toggleButton">Afficher / Cacher la liste de livres</button>
+        <div class="bookList hidden">
+            <!-- Contenu pour l'onglet Les Salauds Gentilshommes -->
+            <div class="book">
+                <div class="bookInfo">
+                    <img src="Ressource/LSGh_1.jpg" alt="Les Mensonges de Locke Lamora" class="BookImage">
+                    <div class="bookDetails">
+                        <p>Les Mensonges de Locke Lamora</p>
+                        <p class="description hidden">Dans la cité de Camorr, Locke Lamora et ses complices, membres de la bande des Salauds Gentilshommes, mènent des escroqueries élaborées contre les riches.
+                            Cependant, leurs plans prennent une tournure mortelle lorsqu'ils se
+                            retrouvent confrontés à un mystérieux ennemi</p>
+                        <button class="showDescriptionButton">Afficher la description</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="book">
-            <div class = "bookInfo">
-                <img src="Ressource/Livre_3.jpg" alt="Livre 3" class = "BookImage">
-                <div class = "bookDetails">
-                    <p>Le Sang des Elfes</p>
-                    <p  class = " description hidden"> Le premier roman de la saga suit Ciri, une jeune princesse avec des pouvoirs surnaturels, alors qu'elle devient l'apprentie de Geralt. 
-                        Le récit plonge plus profondément dans les conflits politiques et les complots qui entourent Ciri. </p>
-                    <button class = "showDescriptionButton">Afficher la description </button>
+            <div class="book">
+                <div class="bookInfo">
+                    <img src="Ressource/LSGh_2.jpg" alt="Des Horizons Rouge Sang" class="BookImage">
+                    <div class="bookDetails">
+                        <p>Des Horizons Rouge Sang</p>
+                        <p class="description hidden">Après les événements du premier tome, Locke et son ami Jean se retrouvent embarqués dans des aventures 
+                            maritimes en tant que pirates. Ils naviguent à travers des mers dangereuses, affrontant des pirates rivaux, 
+                            des conspirations politiques, et découvrant des secrets qui changent la donne.</p>
+                        <button class="showDescriptionButton">Afficher la description</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="book">
-            <div class = "bookInfo">
-                <img src="Ressource/Livre_4.jpg" alt="Livre 4" class = "BookImage">
-                <div class = "bookDetails">
-                    <p>Le Temps du Mépris</p>
-                    <p  class = " description hidden"> Les tensions politiques s'intensifient alors que la guerre entre les royaumes et les mages éclate. Ciri se retrouve au cœur des événements et est confrontée à des défis 
-                        qui mettront à l'épreuve sa résilience et son pouvoir.</p>
-                    <button class = "showDescriptionButton">Afficher la description </button>
+            <div class="book">
+                <div class="bookInfo">
+                    <img src="Ressource/LSGh_3.jpg" alt="La République des Voleurs" class="BookImage">
+                    <div class="bookDetails">
+                        <p>La République des Voleurs</p>
+                        <p class="description hidden">Locke et Jean font face à un nouveau défi lorsqu'un mystérieux adversaire les force à participer à un duel d'intelligence et d'escroquerie. 
+                            Leur rivalité se déroule sur la scène politique de Karthain, avec des conséquences personnelles 
+                            et professionnelles importantes.</p>
+                        <button class="showDescriptionButton">Afficher la description</button>
+                    </div>
                 </div>
             </div>
+            <!-- Ajoutez plus de livres au besoin -->
         </div>
-        <div class="book">
-            <div class = "bookInfo">
-                <img src="Ressource/Livre_5.jpg" alt="Livre 5" class = "BookImage">
-                <div class = "bookDetails">
-                    <p>Le Baptème du Feu</p>
-                    <p  class = " description hidden"> Geralt et ses alliés poursuivent leur quête pour protéger Ciri des forces qui la traquent. Le récit explore les 
-                        conséquences de la guerre et les sacrifices nécessaires pour sauver ceux que l'on aime. </p>
-                    <button class = "showDescriptionButton">Afficher la description </button>
-                </div>
-            </div>
-        </div>
-        <div class="book">
-            <div class = "bookInfo">
-                <img src="Ressource/Livre_6.jpg" alt="Livre 6" class = "BookImage">
-                <div class = "bookDetails">
-                    <p>La Tour de l'Hirondelle</p>
-                    <p  class = " description hidden"> Ciri continue son voyage, tandis que des intrigues politiques et des conspirations obscurcissent le monde. 
-                        L'histoire révèle des éléments clés du passé de Ciri et sa connexion avec Geralt.</p>
-                    <button class = "showDescriptionButton">Afficher la description </button>
-                </div>
-            </div>
-        </div>
-        <div class="book">
-            <div class = "bookInfo">
-                <img src="Ressource/Livre_7.jpg" alt="Livre 7" class = "BookImage">
-                <div class = "bookDetails">
-                    <p>La Dame du Lac</p>
-                    <p  class = " description hidden"> Le dernier livre de la saga rassemble les fils narratifs, révélant les destins de Geralt, Ciri et Yennefer. 
-                        L'intrigue explore les thèmes de la destinée, 
-                        de l'amour et des choix difficiles dans un monde hanté par la magie et la guerrehjvhjkgjvjky. </p>
-                    <button class = "showDescriptionButton">Afficher la description </button>
-                </div>
-            </div>
-        </div>
-        <!-- Ajoutez plus de livres au besoin -->
     </div>
     <script src="site.js"></script>
 </body>
